@@ -1,0 +1,394 @@
+html,
+body {
+	min-width: 1024px;
+	margin: 0;
+	padding: 0;
+
+	font-family: "Lato", Arial, sans-serif;
+	font-size: 20px;
+	line-height: normal;
+
+	background-color: #ffffff;
+}
+
+@font-face {
+	font-family: "GothamPro", sans-serif;
+	src: url("../fonts/GothaProReg.woff");
+}
+
+/*SLIDE1*/
+
+.slide-container {
+	width: 1024px;
+	height: 768px;
+	margin: 0;
+
+	position: relative;
+
+	overflow: hidden;
+}
+
+.show-container {
+	transition: transform 0.5s;
+}
+
+.show-slide1 {
+	transform: translateY(0);
+}
+
+.show-slide2 {
+	transform: translateY(-768px);
+}
+
+.show-slide3 {
+	transform: translateY(-1536px);
+}
+
+.slide-controls {
+	height: 14px;
+	width: 55px;
+
+	position: absolute;
+	top: 384px;
+	left: 960px;
+
+	display: flex;
+	justify-content: space-between;
+
+	z-index: 2;
+	transform: rotate(90deg);
+}
+
+.slide-controls a[class^="slide"] {
+	display: block;
+	width: 13px;
+	height: 13px;
+
+	background-color: #ffffff;
+
+	border-radius: 50%;
+}
+
+.slide-controls a[class$="active"] {
+	background-color: #f78b1f;
+}
+
+.slide1 {
+	margin: 0;
+	padding: 0;
+	padding-top: 140px;
+	padding-left: 65px;
+	width: 1024px;
+	height: 768px;	
+
+	color: #0d319c;
+
+	position: relative;
+
+	background-image: url("../img/slide1-bg.png");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+
+	box-sizing: border-box;
+}
+
+
+.slide1 h1 {
+	margin: 0;
+	width: 740px;
+
+	font-size: 50px;
+	font-weight: normal;
+	font-family: "GothamPro", sans-serif;
+}
+
+.slide1 p[class^="caption"] {
+	display: block;
+
+	position: absolute;
+
+	margin: 0;
+}
+
+.slide1 .caption1 {	
+	top: 275px;
+	left: 625px;
+}
+
+.slide1 .caption2 {
+	top: 395px;
+	left: 225px;
+}
+
+.slide1 .caption3 {
+	top: 505px;
+	left: 370px;
+}
+
+.slide1 .caption4 {
+	top: 485px;
+	left: 790px;
+}
+
+.mark-caption1 {
+	position: absolute;
+	top: 260px;
+	left: 559px;
+}
+
+.mark-caption-slice1 {
+	fill: #f78b1f;
+	fill-opacity: 0.22;
+	stroke: #d54a2d;
+	stroke-width: 1px;
+}
+
+.mark-caption-slice2 {
+	fill: #f27f21;
+	fill-opacity: 0.22;
+	stroke-width: 1px;
+	stroke: #d54a2d;
+}
+
+.mark-caption-slice3 {
+	fill: url(#grad1);
+	fill-opacity: 0.62;
+}
+
+.mark-caption2 {
+	position: absolute;
+	top: 415px;
+	left: 258px;
+}
+
+.mark-caption3 {
+	position: absolute;
+	top: 520px;
+	left: 460px;
+}
+
+.mark-caption4 {
+	position: absolute;
+	top: 495px;
+	left: 800px;
+}
+
+.slide-down-slide {
+	position: absolute;
+	top: 685px;
+
+	width: 1024px;
+	height: 83px;
+
+	background-image: url("../img/gradient-down.png");
+	background-repeat: no-repeat;
+	background-position: -100px 100%;
+}
+
+.slide-down-slide p {
+	margin: 0;
+	padding-left: 400px;
+	padding-top: 15px;
+
+	font-family: "GothamPro", sans-serif;
+	font-size: 15px;
+	color: #ffffff;
+
+	box-sizing: border-box;
+}
+
+.slide-down-slide p::after {
+	content: "";
+	width: 30px;
+	height: 30px;
+	margin: 0;
+	margin-left: 40px;
+
+	display: block;
+
+	border-left: 2px solid #ffffff;
+	border-bottom: 2px solid #ffffff;
+	transform: rotate(-45deg);
+}
+
+/*SLIDE2*/
+
+.slide2 {
+	margin: 0;
+	width: 1024px;
+	min-height: 768px;
+	padding-top: 250px;
+	
+	position: relative;
+
+	background: 
+		url("../img/ice-copy6.png") no-repeat 8% 22%,
+		url("../img/ice-copy5.png") no-repeat 25% 67%,
+		url("../img/ice-copy4.png") no-repeat 75% 85%,
+		url("../img/ice-copy3.png") no-repeat 100% 7%,
+		url("../img/slide2-bg.png") no-repeat 0 0;
+
+	color: #ffffff;	
+	box-sizing: border-box;
+
+}
+
+.slide2 h2 {
+	margin: 0 auto;
+	padding: 0;
+	width: 460px;
+
+	font-size: 50px;
+	font-weight: normal;
+	font-family: "GothamPro", sans-serif;
+}
+
+.slide2 .slide-down-slide p {
+	padding-left: 470px;
+}
+
+.slide2 .slide-down-slide {
+	background-position: -50px 100%;
+}
+
+/*SLIDE3*/
+
+.slide3 {
+	margin: 0;
+	width: 1024px;
+	min-height: 768px;
+	
+	position: relative;
+
+	background-color: #0c1446; 
+	background: url("../img/slide3-bg.png") no-repeat 0 0;
+
+	font-family: "GothamPro", sans-serif;
+	color: #ffffff;	
+	font-weight: normal;
+	white-space: nowrap;
+	vertical-align: top;
+	font-size: 0;
+}
+
+.range-slide {
+	-webkit-appearance: none;
+	width: 640px;
+
+	position: absolute;
+	top: 89%;
+	left: 192px;
+
+	cursor: pointer;
+	opacity: 0.5;
+	transition: opacity 0.2s;
+	z-index: 2;
+}
+
+.range-slide::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width: 43px;
+	height: 55px;
+	margin-top: -24px;
+
+	background-image: url("../img/range-control.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.range-slide::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 13px;
+
+	background-color: #d1eaff;
+}
+
+.range-slide:focus,
+.range-slide:hover {
+	outline: none;
+	opacity: 1;
+}
+
+.slider-date {
+	width: 650px;
+	height: 20px;
+
+	position: absolute;
+	top: 94%;
+	left: 190px;
+
+	display: flex;
+	justify-content: space-between;
+	z-index: 2;
+}
+
+.slider-date-item {
+	margin: 0;
+	display: block;
+	width: 52px;
+	height: 20px;
+
+	font-size: 20px;
+}
+
+.slide3-container {
+	width: 3072px;
+	height: 768px;
+
+	transition: transform 0.5s;
+}
+
+.show-item1 {
+	transform: translateX(0);
+}
+
+.show-item2 {
+	transform: translateX(-1024px);
+}
+
+.show-item3 {
+	transform: translateX(-2048px);
+}
+
+.slide3-container div[class^="slide3"] {
+	margin: 0;
+	padding-top: 115px;
+	padding-left: 85px;
+	width: 1024px;
+	height: 768px;
+
+	display: inline-block;
+
+	box-sizing: border-box;
+}
+
+.slide3-container div[class^="slide3"] h3 {
+	margin: 0;
+
+	font-size: 30px;
+	font-weight: normal;
+}
+
+.slide3-item1 {
+	background: 
+		url("../img/block3-ice1.png") no-repeat 0 15%,
+		url("../img/block3-ice2.png") no-repeat 19% 100%,
+		url("../img/block3-ice3.png") no-repeat 100% 32%,
+		url("../img/block3-info.png") no-repeat 0 -20px;
+}
+
+.slide3-item2 {
+	background: 
+		url("../img/block2-ice1.png") no-repeat 5% 36%,
+		url("../img/block2-ice2.png") no-repeat 48% 13%,
+		url("../img/block2-ice3.png") no-repeat 100% 100%,
+		url("../img/block2-info.png") no-repeat 0 0;
+}
+
+.slide3-item3 {
+	background: 
+		url("../img/block1-ice1.png") no-repeat 3% 98%,
+		url("../img/block1-ice2.png") no-repeat 73% 34%,
+		url("../img/block1-ice3.png") no-repeat 92% 15%,
+		url("../img/block1-info.png") no-repeat 0 0;
+}
